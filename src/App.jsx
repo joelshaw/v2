@@ -1,12 +1,20 @@
 import React from 'react';
-import './App.css';
+import styled from 'styled-components';
 import Introduction from './components/introduction';
+
+const textColor = '#fff';
+const darkBlue= '#0a192f';
+
+const IntroductionCard = styled.div`
+    color: ${textColor};
+    height: 100vh;
+`;
 
 const App = () => {
   return (
-    <div>
+    <IntroductionCard>
       <Introduction></Introduction>
-    </div>
+    </IntroductionCard>
   );
 }
 
