@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import { Airplane } from '@styled-icons/ionicons-outline/Airplane';
 
