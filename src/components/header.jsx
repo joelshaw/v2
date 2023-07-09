@@ -13,7 +13,6 @@ const HeaderStyle = styled.div`
     z-index: 9999;
     background: ${white};
     margin: 2em auto 0;
-    border: 1px solid #cecece;
     border-radius: 3em;
     padding: 0.5em;
     width: 85%;
@@ -26,6 +25,7 @@ const HeaderStyleContainer = styled.header`
     width: 100%;
 
     h1 {
+        font-size: 1.5em;
         margin: 0 0 0 0.8em;
         text-transform: uppercase;
     }

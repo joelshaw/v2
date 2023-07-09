@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Airplane } from '@styled-icons/ionicons-outline/Airplane';
+import { LocationPin } from '@styled-icons/entypo/LocationPin';
 
 
 const StyledIntro = styled.div`
@@ -9,38 +9,38 @@ const StyledIntro = styled.div`
     height: inherit;
     justify-content: center;
     position: absolute;
-    left: 15%;
-`;
+    left: 10%;
 
-const StyledHeadline = styled.h1`
-    font-size: .5em;
-    line-height: 5em;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-`;
+    h1 {
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+    }
 
-const StyledSubheadline = styled.h2`
-    font-size: 1.25em;
-    line-height: 2.5em;
-    margin-bottom: 0.5em;
-`;
+    h2 {
+        font-size: 1.65em;
+        line-height: 2.5em;
+        margin-bottom: 0.5em;
+    }
 
-const LocationArrow = styled(Airplane)`
-    font-size: 0.2em;
-    width: 30px;
-    padding: 0 2em;
+    h2, h3 {
+        margin: 0;
+    }
+
+    svg {
+        font-size: 0.2em;
+        width: 30px;
+        padding: 0 2em;
+        padding-left: 0;
+    }
 `;
 
 const Introduction = () => {
     return(
         <StyledIntro>
-            <StyledHeadline>
-                <h1>Who is Joel Shaw?</h1>
-            </StyledHeadline>
-            <StyledSubheadline>
-                <h2>A senior software engineer, photographer, and speaker.</h2>                
-            </StyledSubheadline>
-            <h3>Richmond, VA <LocationArrow /> Nashville, TN</h3>
+            <h1>Who is Joel Shaw?</h1>
+            <h2>Software Engineer. Photographer. Disability Advocate.</h2>                
+            <h3><LocationPin />Nashville, TN</h3>
         </StyledIntro>
     );
 }
