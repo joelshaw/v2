@@ -2,14 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import { LocationPin } from '@styled-icons/entypo/LocationPin';
 
+const darkBlue = '#242e3c';
+const white = '#ffffff';
 
 const StyledIntro = styled.div`
     display: flex;
     flex-direction: column;
     height: inherit;
     justify-content: center;
-    position: absolute;
-    left: 10%;
+    position: relative;
+    padding-left: 10%;
+    background: ${darkBlue};
+    color: ${white};
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 70vh;
 
     h1 {
         font-size: 1em;

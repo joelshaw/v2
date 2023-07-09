@@ -2,14 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Download } from '@styled-icons/boxicons-regular/Download';
-import { Bluetooth } from 'styled-icons/bootstrap';
 
 const darkBlue = '#242e3c';
 const white = '#ffffff';
 const HeaderStyle = styled.div`
     display: flex;
     align-items: center;
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
     z-index: 9999;
     background: ${white};
     margin: 2em auto 0;
