@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Copyright = styled.div`
     letter-spacing: 1px;
-    text-align: right;
+    text-align: center;
     padding: 0 10%;
 `;
 

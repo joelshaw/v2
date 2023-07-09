@@ -2,22 +2,23 @@ import React from 'react';
 import styled from 'styled-components';
 import { LocationPin } from '@styled-icons/entypo/LocationPin';
 
+const lighterBlue = '#333d4c';
 const darkBlue = '#242e3c';
 const white = '#ffffff';
 
 const StyledIntro = styled.div`
     display: flex;
     flex-direction: column;
-    height: inherit;
     justify-content: center;
     position: relative;
     padding: 0 10%;
-    background: ${darkBlue};
+    background: linear-gradient(45deg, ${lighterBlue} 0 50%, ${darkBlue} 50% 100%);
     color: ${white};
-    position: relative;
     top: 0;
     width: 100%;
     height: 70vh;
+    z-index: 2;
+
 
     h1 {
         font-size: 1em;
@@ -45,11 +46,13 @@ const StyledIntro = styled.div`
 
 const Introduction = () => {
     return(
-        <StyledIntro>
-            <h1>Who is Joel Shaw?</h1>
-            <h2>Software Engineer. Photographer. Disability Advocate.</h2>                
-            <h3><LocationPin />Nashville, TN</h3>
-        </StyledIntro>
+        <>
+            <StyledIntro>
+                <h1>Who is Joel Shaw?</h1>
+                <h2>Software Engineer. Photographer. Disability Advocate.</h2>                
+                <h3><LocationPin />Nashville, TN</h3>
+            </StyledIntro>
+        </>
     );
 }
 

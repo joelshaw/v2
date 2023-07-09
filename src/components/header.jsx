@@ -15,6 +15,7 @@ const HeaderStyle = styled.div`
     background: ${white};
     margin: 2em auto 0;
     border-radius: 3em;
+    box-shadow: 0 3px 13px rgba(0,0,0,0.5);
     padding: 0.5em;
     width: 85%;
 `;
@@ -32,7 +33,7 @@ const HeaderStyleContainer = styled.header`
     }
 `;
 
-const HeaderStyle__btns = styled.button`
+const HeaderStyleBtns = styled.button`
     float: right;
     border: 2px solid #cecece;
     border-radius: 3em;
@@ -67,10 +68,10 @@ const Header = () => {
             <HeaderStyle>
                 <HeaderStyleContainer>
                     <h1>Joel Shaw</h1>
-                    <HeaderStyle__btns>
+                    <HeaderStyleBtns>
                         <Download />
                         <p>Download CV</p>
-                    </HeaderStyle__btns>
+                    </HeaderStyleBtns>
                 </HeaderStyleContainer>
             </HeaderStyle>
         </>
