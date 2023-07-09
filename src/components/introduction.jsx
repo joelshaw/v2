@@ -11,7 +11,7 @@ const StyledIntro = styled.div`
     height: inherit;
     justify-content: center;
     position: relative;
-    padding-left: 10%;
+    padding: 0 10%;
     background: ${darkBlue};
     color: ${white};
     position: relative;
