@@ -1,20 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
+
+import Header from './components/header';
 import Introduction from './components/introduction';
 
 const textColor = '#fff';
-//const darkBlue = '#0a192f';
+const darkBlue = '#242e3c';
 
 const IntroductionCard = styled.div`
+    background: ${darkBlue};
     color: ${textColor};
+    position: absolute;
+    top: 0;
+    width: 100%;
     height: 100vh;
 `;
 
 const App = () => {
   return (
-    <IntroductionCard>
-      <Introduction></Introduction>
-    </IntroductionCard>
+    <>
+      <Header />
+      <IntroductionCard>
+        <Introduction></Introduction>
+      </IntroductionCard>
+    </>
   );
 }
 
