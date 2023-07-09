@@ -5,6 +5,7 @@ import { Download } from '@styled-icons/boxicons-regular/Download';
 
 const darkBlue = '#242e3c';
 const white = '#ffffff';
+const black = '#333333';
 const HeaderStyle = styled.div`
     display: flex;
     align-items: center;
@@ -18,6 +19,18 @@ const HeaderStyle = styled.div`
     box-shadow: 0 3px 13px rgba(0,0,0,0.5);
     padding: 0.5em;
     width: 85%;
+
+    a {
+        color: ${black};
+        text-decoration: none;
+    }
+
+    a:hover {
+        li {
+             color: #cecece;
+        }
+       
+    }
 `;
 
 const HeaderStyleContainer = styled.header`
@@ -30,6 +43,16 @@ const HeaderStyleContainer = styled.header`
         font-size: 1.5em;
         margin: 0 0 0 0.8em;
         text-transform: uppercase;
+    }
+`;
+
+const HeaderStyleNav = styled.ul`
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding: 0 1.5em;
     }
 `;
 
@@ -68,6 +91,12 @@ const Header = () => {
             <HeaderStyle>
                 <HeaderStyleContainer>
                     <h1>Joel Shaw</h1>
+                    <HeaderStyleNav>
+                        <li>About</li>
+                        <li>Technologies</li>
+                        <li><a href="https://joelshaw.photography" target="_blank">Photography</a></li>
+                        <li>Speaking</li>
+                    </HeaderStyleNav>
                     <HeaderStyleBtns>
                         <Download />
                         <p>Download CV</p>
